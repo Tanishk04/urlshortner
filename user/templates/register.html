@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}         
+
+{% block style %}
+<style>
+	.my-form {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+
+	.my-form .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+
+</style>
+{% endblock style %}
+
+{% block title %}
+Register
+{% endblock title %}
+
+{% block content %} 
+
+
+
+{% if register_form.errors %}
+  <div class="alert alert-danger">
+    <ul>
+      {% for field, errors in register_form.errors.items %}
+        {% for error in errors %}
+          <li>{{ field }}: {{ error }}</li>
+        {% endfor %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+{% comment %} <!--Register--> 
+<div class="container py-5">
+	<h1>Register</h1>
+	<form method="POST">
+		{% csrf_token %}
+		{{ register_form.as_p }}          
+		<button class="btn btn-primary" type="submit">Register</button>
+	</form>
+	<p class="text-center">If you already have an account, <a href="/user/login">login</a> instead.</p>
+</div> {% endcomment %}
+
+<main class="my-form">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">Register</div>
+          <div class="card-body">
+            <form method="POST">
+              {% csrf_token %}
+
+              <!-- First Name -->
+              <div class="form-group row">
+                <label for="first_name" class="col-md-4 col-form-label text-md-right">First Name</label>
+                <div class="col-md-6">
+                  {{ register_form.first_name }}
+                </div>
+              </div>
+
+              <!-- Last Name -->
+              <div class="form-group row">
+                <label for="last_name" class="col-md-4 col-form-label text-md-right">Last Name</label>
+                <div class="col-md-6">
+                  {{ register_form.last_name }}
+                </div>
+              </div>
+
+              <!-- Username -->
+              <div class="form-group row">
+                <label for="username" class="col-md-4 col-form-label text-md-right">Username</label>
+                <div class="col-md-6">
+                  {{ register_form.username }}
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group row">
+                <label for="email" class="col-md-4 col-form-label text-md-right">Email</label>
+                <div class="col-md-6">
+                  {{ register_form.email }}
+                </div>
+              </div>
+
+              <!-- Password1 -->
+              <div class="form-group row">
+                <label for="password1" class="col-md-4 col-form-label text-md-right">Password</label>
+                <div class="col-md-6">
+                  {{ register_form.password1 }}
+                </div>
+              </div>
+
+              <!-- Password2 -->
+              <div class="form-group row">
+                <label for="password2" class="col-md-4 col-form-label text-md-right">Confirm Password</label>
+                <div class="col-md-6">
+                  {{ register_form.password2 }}
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-group row">
+                <div class="col-md-6 offset-md-4">
+                  <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="text-center">If you already have an account, <a href="/user/login">login</a> instead.</p>
+</main>
+
+{% endblock %}

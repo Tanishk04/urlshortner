@@ -1,0 +1,784 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tender Kind Horse</title>
+    <meta property="og:title" content="Tender Kind Horse" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: "-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif";
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+
+    <style>
+      .user_name{
+        display: inline-block;
+          margin-right: 10px; /* Adjust as needed */
+          text-decoration: None;
+          color: #007bff; /* Text color */
+          font-family: "Inter";
+          padding: 5px 10px; /* Padding */
+
+      }
+      /* CSS styles for customizing authenticated user links */
+      .authenticated-links {
+          display: inline-block;
+          margin-right: 10px; /* Adjust as needed */
+          text-decoration: none;
+          color: #fff; /* Text color */
+          background-color: #007bff; /* Button background color */
+          border: 1px solid #007bff; /* Button border color */
+          padding: 5px 10px; /* Padding */
+          border-radius: 5px; /* Rounded corners */
+      }
+      .authenticated-links:hover {
+          color: #fff; /* Text color */
+          text-decoration: none;
+          background-color: #0056b3; /* Darker background color on hover */
+          border-color: #0056b3; /* Darker border color on hover */
+      }
+  </style>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      @keyframes fade-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="messages">
+      {% if messages %}
+          {% for message in messages %}
+              <div class="alert alert-{{ message.tags }}">
+                  <button type="button" class="close" data-dismiss="alert">&times;</button>
+                  {{ message }}
+              </div>
+          {% endfor %}
+      {% endif %}
+    </div>
+      <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+      <div>
+        <link rel="stylesheet" href="{% static 'css/index.css' %}"/>
+        <div class="home-container">
+          <div class="home-header">
+            <header
+              data-thq="thq-navbar"
+              class="navbarContainer home-navbar-interactive"
+            >
+              <span class="home-logo logo">URLify</span>
+              <div data-thq="thq-navbar-nav" class="home-desktop-menu">
+                <nav class="home-links">
+                  <span class="home-nav12 bodySmall">About</span>
+                  <span class="home-nav2 bodySmall">Features</span>
+                  <span class="home-nav4 bodySmall">Team</span>
+
+                </nav>
+                {% if user.is_authenticated %}
+                    <!-- User is logged in, display authenticated user links -->
+                    <div  class="user_name">Hi {{ user.get_username }}!!</div>
+                    <a href="{% url 'url_list' %}" class="authenticated-links">URLs</a>
+                      <a href="{% url 'logout' %}" class="authenticated-links">Logout</a>
+                    <!-- Add other authenticated user links here -->
+                {% else %}
+                  <div class="home-buttons">
+                    <a href="{% url "login" %}">
+                      <button class="buttonFlat" >Login</button>
+                    </a>
+                    <a href="{% url "register" %}">
+                      <button class="buttonFilled">Register</button>
+                    </a>
+                  </div>
+                {% endif %}
+                
+              </div>
+              <div data-thq="thq-burger-menu" class="home-burger-menu">
+                <svg viewBox="0 0 1024 1024" class="home-icon socialIcons">
+                  <path
+                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                data-thq="thq-mobile-menu"
+                class="home-mobile-menu1 mobileMenu"
+              >
+                <div class="home-nav">
+                  <div class="home-top">
+                    <span class="logo">URLify</span>
+                    <div data-thq="thq-close-menu" class="home-close-menu">
+                      <svg
+                        viewBox="0 0 1024 1024"
+                        class="home-icon02 socialIcons"
+                      >
+                        <path
+                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <nav class="home-links1">
+                    <span class="home-nav21 bodySmall">About</span>
+                    <span class="home-nav21 bodySmall">Features</span>
+                    <span class="home-nav31 bodySmall">Pricing</span>
+                    <span class="home-nav41 bodySmall">Team</span>
+                    <span class="home-nav51 bodySmall">Blog</span>
+                  </nav>
+                  <div class="home-buttons1">
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'logout' %}">Logout</a>
+                    {% else %}
+                        <!-- User is not logged in, display login and register links -->
+                        <a href="{% url "login" %}">
+                          <button class="buttonFlat" >Login</button>
+                        </a>
+                        <a href="{% url "register" %}">
+                          <button class="buttonFilled">Register</button>
+                        </a>
+                    {% endif %}
+                    
+                  </div>
+                </div>
+                <div>
+                  <svg
+                    viewBox="0 0 950.8571428571428 1024"
+                    class="home-icon04 socialIcons"
+                  >
+                    <path
+                      d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="home-icon06 socialIcons"
+                  >
+                    <path
+                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 602.2582857142856 1024"
+                    class="home-icon08 socialIcons"
+                  >
+                    <path
+                      d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </header>
+          </div>
+          
+          <div class="home-hero">
+            <div class="heroContainer home-hero1">
+              <div class="home-container01">
+                <h1 class="home-hero-heading heading1">
+                  Shorten Your URLs with Custom Aliases
+                </h1>
+                <span class="home-hero-sub-heading bodyLarge">
+                  <span>
+                    <span>
+                      <span>
+                        Create memorable and branded short links for your website
+                      </span>
+                      <span></span>
+                    </span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </span>
+                </span>
+                <div class="home-btn-group">
+                  <a href="{% url 'shortenURL' %}" class="buttonFilled">Get Started</a>
+
+                  <button class="buttonFlat">Learn More&nbsp;→</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-features">
+            <div class="featuresContainer">
+              <div class="home-features1">
+                <div class="home-container02">
+                  <span class="overline">
+                    <span>features</span>
+                    <br />
+                  </span>
+                  <h2 class="home-features-heading heading2">
+                    Powerful Features for Shortened URLs
+                  </h2>
+                  <span class="home-features-sub-heading bodyLarge">
+                    <span>
+                      <span>
+                        <span>
+                          Unlock the full potential of your URLs with our
+                          feature-rich platform
+                        </span>
+                        <span></span>
+                      </span>
+                      <span>
+                        <span></span>
+                        <span></span>
+                      </span>
+                    </span>
+                    <span>
+                      <span>
+                        <span></span>
+                        <span></span>
+                      </span>
+                      <span>
+                        <span></span>
+                        <span></span>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+                <div class="home-container03">
+                  <div class="featuresCard feature-card-feature-card">
+                    <svg viewBox="0 0 1024 1024" class="featuresIcon">
+                      <path
+                        d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
+                      ></path>
+                    </svg>
+                    <div class="feature-card-container">
+                      <h3 class="feature-card-text heading3">
+                        <span>Custom Aliases</span>
+                      </h3>
+                      <span class="bodySmall">
+                        <span>
+                          Create unique and memorable custom aliases for your
+                          shortened URLs
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="featuresCard feature-card-feature-card">
+                    <svg viewBox="0 0 1024 1024" class="featuresIcon">
+                      <path
+                        d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
+                      ></path>
+                    </svg>
+                    <div class="feature-card-container">
+                      <h3 class="feature-card-text heading3">
+                        <span>Analytics Tracking (Coming Soon!!)</span>
+                      </h3>
+                      <span class="bodySmall">
+                        <span>
+                          Track the performance of your shortened URLs with
+                          detailed analytics
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="featuresCard feature-card-feature-card">
+                    <svg viewBox="0 0 1024 1024" class="featuresIcon">
+                      <path
+                        d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
+                      ></path>
+                    </svg>
+                    <div class="feature-card-container">
+                      <h3 class="feature-card-text heading3">
+                        <span>Password Protection</span>
+                      </h3>
+                      <span class="bodySmall">
+                        <span>
+                          Secure your shortened URLs with password protection for
+                          added privacy
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="featuresCard feature-card-feature-card">
+                    <svg viewBox="0 0 1024 1024" class="featuresIcon">
+                      <path
+                        d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
+                      ></path>
+                    </svg>
+                    <div class="feature-card-container">
+                      <h3 class="feature-card-text heading3">
+                        <span>API Integration</span>
+                      </h3>
+                      <span class="bodySmall">
+                        <span>
+                          Integrate our URL shortening service seamlessly into
+                          your applications and websites
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-pricing">
+            <div class="pricingContainer">
+              <div class="home-container04">
+                <span class="overline">
+                  <span>Pricing</span>
+                  <br />
+                </span>
+                <h2 class="heading2">Choose the Perfect Plan for You</h2>
+                <span class="home-pricing-sub-heading bodyLarge">
+                  <span>
+                    <span>
+                      Upgrade your URL shortening experience with our flexible
+                      pricing options
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="home-container05">
+                <div class="home-pricing-card freePricingCard">
+                  <div class="home-container06">
+                    <span class="home-text36 heading3">Free</span>
+                    <span class="bodySmall">
+                      A short description for the Free plan
+                    </span>
+                  </div>
+                  <div class="home-container07">
+                    <span class="home-text37">
+                      <span>$</span>
+                      <span></span>
+                    </span>
+                    <span class="home-free-plan-price">0</span>
+                  </div>
+                  <div class="home-container08">
+                    <div class="home-container09">
+                      <span class="home-text40">✔</span>
+                      <span class="bodySmall">Custom aliases</span>
+                    </div>
+                    <div class="home-container10">
+                      <span class="home-text41">✔</span>
+                      <span class="bodySmall">Unlimited redirects</span>
+                    </div>
+                  </div>
+                  <button class="home-button buttonOutline">
+                    Continue with Free
+                  </button>
+                </div>
+                <div class="home-pricing-card1 basicPricingCard">
+                  <div class="home-container11">
+                    <span class="home-text42 heading3">BASIC</span>
+                    <span class="bodySmall">
+                      A short description for the Basic plan
+                    </span>
+                  </div>
+                  <div class="home-container12">
+                    <span class="home-text43">
+                      <span>$</span>
+                      <span></span>
+                    </span>
+                    <span class="home-basic-plan-pricing">9.99</span>
+                    <span class="home-text46">/ month</span>
+                  </div>
+                  <div class="home-container13">
+                    <div class="home-container14">
+                      <span class="home-text47">✔</span>
+                      <span class="bodySmall">All features of FREE plan</span>
+                    </div>
+                    <div class="home-container15">
+                      <span class="home-text49">✔</span>
+                      <span class="bodySmall">Custom aliases</span>
+                    </div>
+                    <div class="home-container16">
+                      <span class="home-text50">✔</span>
+                      <span class="bodySmall">Unlimited redirects</span>
+                    </div>
+                    <div class="home-container17">
+                      <span class="home-text51">✔</span>
+                      <span class="bodySmall">Analytics dashboard</span>
+                    </div>
+                  </div>
+                  <button class="home-button1 buttonFilledSecondary">
+                    Try the Basic plan
+                  </button>
+                </div>
+                <div class="home-pricing-card2 proPricingCard">
+                  <div class="home-container18">
+                    <span class="home-text52 heading3">
+                      <span>PRO</span>
+                      <br />
+                    </span>
+                    <span class="bodySmall">
+                      A short description for the Pro plan
+                    </span>
+                  </div>
+                  <div class="home-container19">
+                    <span class="home-text55">
+                      <span>$</span>
+                      <span></span>
+                    </span>
+                    <span class="home-pro-plan-pricing">19.99</span>
+                    <span class="home-text58">/ month</span>
+                  </div>
+                  <div class="home-container20">
+                    <div class="home-container21">
+                      <span class="home-text59">✔</span>
+                      <span class="bodySmall">
+                        &nbsp;All features of BASIC plan
+                      </span>
+                    </div>
+                    <div class="home-container22">
+                      <span class="home-text61">✔</span>
+                      <span class="bodySmall">Custom aliases</span>
+                    </div>
+                    <div class="home-container23">
+                      <span class="home-text62">✔</span>
+                      <span class="bodySmall">Unlimited redirects</span>
+                    </div>
+                    <div class="home-container24">
+                      <span class="home-text63">✔</span>
+                      <span class="bodySmall">Analytics dashboard</span>
+                    </div>
+                    <div class="home-container25">
+                      <span class="home-text64">✔</span>
+                      <span class="bodySmall">Password protection</span>
+                    </div>
+                  </div>
+                  <button class="home-button2 buttonFilledSecondary">
+                    Try the PRO plan
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-banner">
+            <div class="bannerContainer home-banner1">
+              <h1 class="home-banner-heading heading2">
+                Why Choose Our URL Shortener?
+              </h1>
+              <span class="home-banner-sub-heading bodySmall">
+                <span>
+                  <span>
+                    <span>
+                      Our URL shortener allows you to create custom aliases for
+                      your shortened links, providing a more professional and
+                      branded experience for your audience. With our easy-to-use
+                      platform, you can quickly generate short links and track
+                      their performance.
+                    </span>
+                    <span></span>
+                  </span>
+                  <span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                  <span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </span>
+              </span>
+              <button class="buttonFilled">Learn More</button>
+            </div>
+          </div>
+          <div class="home-faq">
+            <div class="faqContainer">
+              <div class="home-faq1">
+                <div class="home-container26">
+                  <span class="overline">
+                    <span>FAQ</span>
+                    <br />
+                  </span>
+                  <h2 class="home-text82 heading2">Common questions</h2>
+                  <span class="home-text83 bodyLarge">
+                    <span>
+                      Here are some of the most common questions that we get.
+                    </span>
+                    <br />
+                  </span>
+                </div>
+                <div class="home-container27">
+                  <div class="question1-container">
+                    <span class="question1-text heading3">
+                      <span>What is a shortened URL?</span>
+                    </span>
+                    <span class="bodySmall">
+                      <span>
+                        A shortened URL is a condensed version of a long URL that
+                        redirects to the original website.
+                      </span>
+                    </span>
+                  </div>
+                  <div class="question1-container">
+                    <span class="question1-text heading3">
+                      <span>How does the custom alias feature work?</span>
+                    </span>
+                    <span class="bodySmall">
+                      <span>
+                        The custom alias feature allows you to create a
+                        personalized and memorable alias for your shortened URL.
+                      </span>
+                    </span>
+                  </div>
+                  <div class="question1-container">
+                    <span class="question1-text heading3">
+                      <span>
+                        Can I change the custom alias after creating it?
+                      </span>
+                    </span>
+                    <span class="bodySmall">
+                      <span>
+                        Yes, We provide option to make changes in registered URL mappings.
+                      </span>
+                    </span>
+                  </div>
+                  <div class="question1-container">
+                    <span class="question1-text heading3">
+                      <span>
+                        Is there a limit on the number of URLs I can shorten?
+                      </span>
+                    </span>
+                    <span class="bodySmall">
+                      <span>
+                        No, you can shorten as many URLs as you want using our
+                        service.
+                      </span>
+                    </span>
+                  </div>
+                  <div class="question1-container">
+                    <span class="question1-text heading3">
+                      <span>
+                        Are there any restrictions on the types of URLs that can
+                        be shortened?
+                      </span>
+                    </span>
+                    <span class="bodySmall">
+                      <span>
+                        We do not allow the shortening of URLs that violate our
+                        terms of service, including malicious or inappropriate
+                        content.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-footer">
+            <footer class="footerContainer home-footer1">
+              <div class="home-container28">
+                <span class="logo">URLify</span>
+                <nav class="home-nav1">
+                  <span class="home-nav11 bodySmall">About</span>
+                  <span class="home-nav22 bodySmall">Features</span>
+                  <span class="home-nav32 bodySmall">Pricing</span>
+                  <span class="home-nav42 bodySmall">Team</span>
+                  <span class="home-nav52 bodySmall">Blog</span>
+                </nav>
+              </div>
+              <div class="home-separator"></div>
+              <div class="home-container29">
+                <span class="bodySmall home-text86">
+                  © 2023 myCompany, All Rights Reserved.
+                </span>
+                <div class="home-icon-group1">
+                  <svg
+                    viewBox="0 0 950.8571428571428 1024"
+                    class="home-icon10 socialIcons"
+                  >
+                    <path
+                      d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="home-icon12 socialIcons"
+                  >
+                    <path
+                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 602.2582857142856 1024"
+                    class="home-icon14 socialIcons"
+                  >
+                    <path
+                      d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    ></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get all the close buttons
+        var closeButtons = document.querySelectorAll('.alert button.close');
+    
+        // Add click event listener to each close button
+        closeButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                // Find the parent alert element and remove it
+                var alert = this.parentElement;
+                setTimeout(function () {
+                    alert.remove(); // Remove the alert after 5 seconds
+                }, 5000);
+            });
+        });
+    
+        // Automatically remove alerts after 5 seconds
+        var alerts = document.querySelectorAll('.alert');
+        alerts.forEach(function (alert) {
+            setTimeout(function () {
+                alert.remove(); // Remove the alert after 5 seconds
+            }, 3000);
+        });
+    });
+    
+    </script>
+  </body>
+</html>

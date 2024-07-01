@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URLify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Optional: Additional custom styles can be added here */
+    </style>
+</head>
+<body>
+    <div id="messages">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">URLify</h5>
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="long" class="form-label">Long URL</label>
+                            <input type="text" class="form-control" id="long" name="long" 
+                            {% if form.long.value %}
+                              value="{{ form.long.value }}"
+                            {% endif %}
+                            >
+                            {% if form.long.errors %}
+                                <div class="invalid-feedback">{{ form.long.errors }}</div>
+                            {% endif %}
+                        </div>
+                        <div class="mb-3">
+                            <label for="alias" class="form-label">Alias </label>
+                            <input type="text" class="form-control" id="alias" name="alias" 
+                            {% if  form.alias.value%}
+                            value="{{form.alias.value }}"
+                            {% endif %}
+                            >
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            {% if  form.long.value %}
+                            Update
+                            {% else %}
+                            Shorten URL
+                            {% endif %}
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Function to handle dismissal of alerts
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all the close buttons
+      var closeButtons = document.querySelectorAll('.alert button.close');
+  
+      // Add click event listener to each close button
+      closeButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          // Find the parent alert element and remove it
+          var alert = this.parentElement;
+          alert.remove();
+        });
+      });
+    });
+  </script>
+</body>
+</html>
