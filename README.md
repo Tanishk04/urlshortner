@@ -19,3 +19,17 @@ This project provides a RESTful API for shortening and managing URLs. Users can 
 - Django SimpleJWT
 - SQLite (default database)
 - Other dependencies as specified in `requirements.txt`
+
+
+
+
+
+
+
+
+
+-----
+Salesforce project
+https://dis0000011spt2aa-dev-ed.develop.my.salesforce.com/
+avinash_hr@salesforce.com
+Salesforce@4092
